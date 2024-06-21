@@ -2,14 +2,16 @@
 
 cd "$HOME" || exit
 
-mkdir temp_____nvim
+mkdir temp__nvim
 
-cd temp_____nvim || exit
+cd temp__nvim || exit
+
 rm -rf nvim
 
 # download github
 git clone https://github.com/kduroux42/nvim_conf_42.git
 
+# extract appimage
 ./nvim.appimage --appimage-extract
 
 cp -r squashfs-root "$HOME"
@@ -19,7 +21,7 @@ rm -rf squashfs-root nvim.appimage
 cp -r nvim "$HOME/.config/"
 
 cd "$HOME" || exit
-rm -rf temp_____nvim
+rm -rf temp__nvim
 
 RC_FILE="$HOME/.zshrc"
 
