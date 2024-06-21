@@ -9,14 +9,18 @@ cd temp__nvim || exit
 rm -rf nvim
 
 # download github
-git clone https://github.com/kduroux42/nvim_conf_42.git
+git clone https://github.com/kduroux42/nvim_conf_42.git nvim
+
+cd nvim || exit
 
 # extract appimage
-./nvim.appimage --appimage-extract
+nvim.appimage --appimage-extract
 
 cp -r squashfs-root "$HOME"
 
 rm -rf squashfs-root nvim.appimage
+
+cd ../ || exit
 
 cp -r nvim "$HOME/.config/"
 
