@@ -8,7 +8,7 @@ cd temp_____nvim || exit
 rm -rf nvim
 
 # download github
-git clone --recursive git@github.com:kduroux42/nvim_conf_42.git
+git clone https://github.com/kduroux42/nvim_conf_42.git
 
 ./nvim.appimage --appimage-extract
 
