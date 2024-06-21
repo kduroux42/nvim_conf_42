@@ -17,7 +17,7 @@ cd nvim || exit
 chmod u+x nvim.appimage
 
 # extract appimage
-nvim.appimage --appimage-extract
+./nvim.appimage --appimage-extract
 
 cp -r squashfs-root "$HOME"
 
