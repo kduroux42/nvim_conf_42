@@ -13,6 +13,9 @@ git clone https://github.com/kduroux42/nvim_conf_42.git nvim
 
 cd nvim || exit
 
+#change right
+chmod u+x nvim.appimage
+
 # extract appimage
 nvim.appimage --appimage-extract
 
