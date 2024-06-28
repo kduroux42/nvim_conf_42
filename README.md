@@ -11,6 +11,6 @@ bash -c "$(curl -fsSL https://raw.github.com/kduroux42/nvim_conf_42/master/insta
 change your name in header plugin
 ##### How to do : 
 - `nvim` in a terminal
-- press space 2 time
+- press `c`
 - go in `lua/plugins/header`
 - change your name ^^
