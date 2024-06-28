@@ -2,6 +2,8 @@
 
 cd "$HOME" || exit
 
+mkdir .fonts
+
 mkdir temp__nvim
 
 cd temp__nvim || exit
@@ -12,6 +14,11 @@ rm -rf nvim
 git clone https://github.com/kduroux42/nvim_conf_42.git nvim
 
 cd nvim || exit
+
+# install nerd fonts
+cp -r FiraCode "$HOME/.fonts/"
+
+fc-cache -v
 
 # extract appimage
 chmod u+x nvim.appimage && ./nvim.appimage --appimage-extract
