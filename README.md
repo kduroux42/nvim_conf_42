@@ -7,3 +7,6 @@ and do alias
 ```
 bash -c "$(curl -fsSL https://raw.github.com/kduroux42/nvim_conf_42/master/install.sh)"
 ```
+### Need to do
+add nerdfont => fc-cache -v\
+change your name in header plugin
