@@ -34,18 +34,7 @@ cp -r nvim "$HOME/.config/"
 cd "$HOME" || exit
 rm -rf temp__nvim
 
-RC_FILE="$HOME/.zshrc"
-
-if [ "$(uname)" != "Darwin" ]; then
-	RC_FILE="$HOME/.bashrc"
-	if [[ -f "$HOME/.zshrc" ]]; then
-		RC_FILE="$HOME/.zshrc"
-	fi
-	if [[ -f "$HOME/.fishrc" ]]; then
-		RC_FILE="$HOME/.config/fish/config.fish"
-	fi
-fi
-
+RC_FILE="$HOME/.config/fish/config.fish"
 echo "try to add alias in file: $RC_FILE"
 
 # set up the alias
